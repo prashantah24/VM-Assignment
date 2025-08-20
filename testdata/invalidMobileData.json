@@ -1,0 +1,27 @@
+[
+  {
+    "case": "Less than 10 digits",
+    "mobile": "12345",
+    "expectedError": "Invalid mobile number"
+  },
+  {
+    "case": "More than 10 digits",
+    "mobile": "123456789012",
+    "expectedError": "Invalid mobile number"
+  },
+  {
+    "case": "Alphabetical characters",
+    "mobile": "abcd123456",
+    "expectedError": "Invalid mobile number"
+  },
+  {
+    "case": "Special characters",
+    "mobile": "12345@#$%",
+    "expectedError": "Invalid mobile number"
+  },
+  {
+    "case": "Blank input",
+    "mobile": "",
+    "expectedError": "Mobile number required"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  { "case": "Valid PAN", "pan": "ABCDE1234F", "expectedValid": true },
+  { "case": "Invalid PAN - less than 10 chars", "pan": "ABC123", "expectedValid": false },
+  { "case": "Invalid PAN - more than 10 chars", "pan": "ABCDE12345F", "expectedValid": false },
+   { "case": "Invalid PAN - with spaces", "pan": "  abcde1234f  ", "expectedValid": true },
+  { "case": "Invalid PAN - lowercase", "pan": "abcde1234f", "expectedValid": true },
+  { "case": "Invalid PAN - special characters", "pan": "AB@#E1234F", "expectedValid": false },
+  { "case": "Blank PAN", "pan": "", "expectedValid": false }
+]
